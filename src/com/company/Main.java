@@ -8,8 +8,8 @@ public class Main {
         // write your code here
 
 
-   CurrentAction currentAction = new CurrentAction();
-        currentAction.CheckAction();
+//   CurrentAction currentAction = new CurrentAction();
+//        currentAction.CheckAction();
 
 
        /* Scanner scanner = new Scanner(System.in);
