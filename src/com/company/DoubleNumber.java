@@ -35,7 +35,12 @@ catch (Exception e)
     }
 
 
+    public static void main(String[] args) {
 
+        DoubleNumber doubleNumber = new DoubleNumber();
+        doubleNumber.FunctionDoubleNumber();
+
+    }
 
 
 
