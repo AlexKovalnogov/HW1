@@ -1,12 +1,10 @@
 package com.company;
 
-import com.intellij.openapi.vcs.history.VcsRevisionNumber;
-
 public class DoubleNumber {
 
     public void FunctionDoubleNumber() {
 try {
-    int Number =  ConsoleInputRead.ReadInputFromConsole();
+    int Number =  ConsoleInputRead.inputAndReadDataFromConsole();
     if (Number % 7 == 0) {
         System.out.println(String.valueOf(Math.abs(Number)) + String.valueOf(Math.abs(Number)));
     }

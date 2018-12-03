@@ -26,9 +26,9 @@ public double getSpeedKmPerHour() {
 
     int i=0;
         System.out.print("Speed KM/h ");
- setSpeedKmPerHour(ConsoleInputRead.ReadInputFromConsole());
+ setSpeedKmPerHour(ConsoleInputRead.inputAndReadDataFromConsole());
         System.out.print("Speed M/s ");
- setSpeedMetersPerSecond(ConsoleInputRead.ReadInputFromConsole());
+ setSpeedMetersPerSecond(ConsoleInputRead.inputAndReadDataFromConsole());
         double SpeedTrasnsform=SpeedKmPerHour*0.27777777;
 
         double MaxValue=0;

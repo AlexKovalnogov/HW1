@@ -6,16 +6,16 @@ import java.util.InputMismatchException;
 public class CurrentAction {
 
 
-    private void CheckAction() {
+    private void checkAction() {
     int time=0;
 
     System.out.print("Please input Hours 0-24: ");
 
 try {
-  time =  ConsoleInputRead.ReadInputFromConsole();
+  time =  ConsoleInputRead.inputAndReadDataFromConsole();
     if (time<0 || time>24){
         System.out.println("Wrong number");
-        new CurrentAction().CheckAction();
+        new CurrentAction().checkAction();
     }
     else  if (time >=9 && time<=18){
         System.out.println("I'm working");
@@ -31,7 +31,7 @@ catch (InputMismatchException e)
 }
     }
 
-    public  String CheckAction( int time) {
+    public  String checkAction(int time) {
 
 String action="";
 
@@ -50,7 +50,7 @@ String action="";
     public static void main(String[] args) {
 
         CurrentAction currentAction = new CurrentAction();
-        currentAction.CheckAction();
+        currentAction.checkAction();
 
     }
 

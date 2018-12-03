@@ -8,9 +8,9 @@ public class CheckTypeOfTriangle {
     public void CheckTriangle()  {
 
 
-            int SideA = ConsoleInputRead.ReadInputFromConsole();
-            int SideB = ConsoleInputRead.ReadInputFromConsole();
-            int SideC = ConsoleInputRead.ReadInputFromConsole();
+            int SideA = ConsoleInputRead.inputAndReadDataFromConsole();
+            int SideB = ConsoleInputRead.inputAndReadDataFromConsole();
+            int SideC = ConsoleInputRead.inputAndReadDataFromConsole();
 
             if(SideA<0||SideB<0||SideC<0) {
                 System.out.println("Length of Side can't be with minus"); }
