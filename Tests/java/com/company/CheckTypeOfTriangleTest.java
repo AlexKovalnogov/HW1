@@ -6,6 +6,9 @@ import static org.junit.Assert.*;
 
 public class CheckTypeOfTriangleTest {
 
+
+
+
     @Test
     public void checkTriangleCase1() {
         CheckTypeOfTriangle checkTypeOfTriangle = new CheckTypeOfTriangle();
@@ -20,12 +23,10 @@ public class CheckTypeOfTriangleTest {
 
     }
 
-
     @Test
     public void checkTriangleCase3() {
         CheckTypeOfTriangle checkTypeOfTriangle = new CheckTypeOfTriangle();
         assertEquals("Triangle is right angled",checkTypeOfTriangle.CheckTriangle(3,4,5));
-
     }
 
 

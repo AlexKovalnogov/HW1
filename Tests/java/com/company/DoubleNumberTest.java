@@ -25,5 +25,4 @@ assertEquals("77",doubleNumber.FunctionDoubleNumber(7));
 
 
 
-
 }
