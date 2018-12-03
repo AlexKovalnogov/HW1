@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HW1.iml" filepath="$PROJECT_DIR$/HW1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MavenArtifactId/MavenArtifactId.iml" filepath="$PROJECT_DIR$/../MavenArtifactId/MavenArtifactId.iml" />
     </modules>
   </component>
 </project>
