@@ -10,7 +10,7 @@ public class MaxFromTreeNumbersTest {
     public void maxNumberCase1() {
 
         MaxFromTreeNumbers maxFromTreeNumbers = new MaxFromTreeNumbers();
-       assertEquals(5 ,maxFromTreeNumbers.MaxNumber(3,4,5));
+       assertEquals(5 ,maxFromTreeNumbers.maxNumber(3,4,5));
 
     }
 
@@ -18,7 +18,7 @@ public class MaxFromTreeNumbersTest {
     public void maxNumberCase2() {
 
         MaxFromTreeNumbers maxFromTreeNumbers = new MaxFromTreeNumbers();
-        assertEquals(34 ,maxFromTreeNumbers.MaxNumber(34,-10,5));
+        assertEquals(34 ,maxFromTreeNumbers.maxNumber(34,-10,5));
 
     }
 }

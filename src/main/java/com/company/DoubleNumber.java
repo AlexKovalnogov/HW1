@@ -2,7 +2,7 @@ package com.company;
 
 public class DoubleNumber {
 
-    public void FunctionDoubleNumber() {
+    public void functionDoubleNumber() {
 try {
     int Number =  ConsoleInputRead.inputAndReadDataFromConsole();
     if (Number % 7 == 0) {
@@ -21,7 +21,7 @@ catch (Exception e)
     }
 
 
-    public String FunctionDoubleNumber(int Number) {
+    public String functionDoubleNumber(int Number) {
 
             String result="";
             if (Number % 7 == 0) {
@@ -36,7 +36,7 @@ catch (Exception e)
     public static void main(String[] args) {
 
         DoubleNumber doubleNumber = new DoubleNumber();
-        doubleNumber.FunctionDoubleNumber();
+        doubleNumber.functionDoubleNumber();
 
     }
 

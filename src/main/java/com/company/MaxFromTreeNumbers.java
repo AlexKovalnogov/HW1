@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class MaxFromTreeNumbers {
 
 
-    public void MaxNumber() {
+    public void maxNumber() {
 
         int value1 = ConsoleInputRead.inputAndReadDataFromConsole();
         int value2 = ConsoleInputRead.inputAndReadDataFromConsole();
@@ -21,7 +21,7 @@ public class MaxFromTreeNumbers {
         System.out.println("Maxvalue = " + bufArr[2]);
     }
 
-    public int MaxNumber(int var1, int var2, int var3) {
+    public int maxNumber(int var1, int var2, int var3) {
 
         int[] bufArr = new int[3];
         bufArr[0] = var1;

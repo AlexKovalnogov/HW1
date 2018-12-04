@@ -5,7 +5,7 @@ package com.company;
 public class CheckTypeOfTriangle {
 
 
-    public void CheckTriangle()  {
+    public void checkTriangle()  {
 
 
             int SideA = ConsoleInputRead.inputAndReadDataFromConsole();
@@ -26,7 +26,7 @@ public class CheckTypeOfTriangle {
             else {System.out.println("Triangle is not right angled");}
         }
 
-    public String CheckTriangle( double SideA,double SideB, double SideC)  {
+    public String checkTriangle(double SideA, double SideB, double SideC)  {
              String TypeOfTriangle="";
 
         if(SideA<0||SideB<0||SideC<0) {
@@ -48,7 +48,7 @@ public class CheckTypeOfTriangle {
 
 
         CheckTypeOfTriangle checkTypeOfTriangle = new CheckTypeOfTriangle();
-        try{  checkTypeOfTriangle.CheckTriangle();}
+        try{  checkTypeOfTriangle.checkTriangle();}
         catch (Exception e)
         { }
 

@@ -1,6 +1,7 @@
 package com.company;
 
 
+import sun.rmi.runtime.Log;
 
 public class MaxSpeed {
 
@@ -73,6 +74,7 @@ public double getSpeedKmPerHour() {
         else{
             MaxValue=SpeedKmPerHour;
             System.out.println( MaxValue);
+
         }
         return  MaxValue;
 
