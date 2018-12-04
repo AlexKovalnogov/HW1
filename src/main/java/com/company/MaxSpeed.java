@@ -41,7 +41,7 @@ public class MaxSpeed {
 
         if (SpeedKmPerHour < 0 || SpeedMetersPerSecond < 0) {
             System.out.println("Speed can;t be less 0");
-            logger.info("Speed can;t be less 0");
+
         } else if (SpeedTrasnsform < SpeedMetersPerSecond) {
             MaxValue = SpeedMetersPerSecond;
             i = 1;

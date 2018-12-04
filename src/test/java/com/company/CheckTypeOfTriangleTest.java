@@ -9,7 +9,7 @@ public class CheckTypeOfTriangleTest {
     CheckTypeOfTriangle checkTypeOfTriangle;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp()  {
         checkTypeOfTriangle = new CheckTypeOfTriangle();
     }
 
