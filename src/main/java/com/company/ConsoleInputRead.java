@@ -1,13 +1,17 @@
 package com.company;
 
 
+import com.sun.istack.internal.logging.Logger;
+
 import java.util.Scanner;
 
 public class ConsoleInputRead {
+
+    static Logger logger = Logger.getLogger(ConsoleInputRead.class);
     public static int inputAndReadDataFromConsole() {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print(" input data:  ");
+      logger.info(" input data:  ");
         return scanner.nextInt();
     }
 

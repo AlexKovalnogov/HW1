@@ -2,45 +2,38 @@ package com.company;
 
 import org.apache.log4j.Logger;
 
-
-
-
-public class MaxSpeed {
- static   Logger logger = Logger.getLogger(MaxSpeed.class);
+public class Speed {
+ final   static Logger logger = Logger.getLogger(Speed.class);
 
     private double SpeedKmPerHour = 0;
     private double SpeedMetersPerSecond = 0;
-   // static Logger logger = Logger.getLogger(MaxSpeed.class);
 
     public double getSpeedKmPerHour() {
         return SpeedKmPerHour;
     }
-
     public void setSpeedKmPerHour(double speedKmPerHour) {
-        SpeedKmPerHour = speedKmPerHour;
+        this.SpeedKmPerHour = speedKmPerHour;
     }
-
     public double getSpeedMetersPerSecond() {
         return SpeedMetersPerSecond;
     }
-
     public void setSpeedMetersPerSecond(double speedMetersPerSecond) {
-        SpeedMetersPerSecond = speedMetersPerSecond;
+        this.SpeedMetersPerSecond = speedMetersPerSecond;
     }
 
-    public void CompareSpeed() {
-
+    public void compareDifferentSpeedsAndOutputBigger() {
         int i = 0;
-        System.out.print("Speed KM/h ");
+        String unit = "";
+        double MaxValue=0;
+
+        logger.info("Speed KM/h ");
         setSpeedKmPerHour(ConsoleInputRead.inputAndReadDataFromConsole());
-        System.out.print("Speed M/s ");
+        logger.info("Speed M/s ");
         setSpeedMetersPerSecond(ConsoleInputRead.inputAndReadDataFromConsole());
         double SpeedTrasnsform = SpeedKmPerHour * 0.27777777;
 
-        double MaxValue = 0;
-
         if (SpeedKmPerHour < 0 || SpeedMetersPerSecond < 0) {
-            System.out.println("Speed can;t be less 0");
+           logger.info("Speed can;t be less 0");
 
         } else if (SpeedTrasnsform < SpeedMetersPerSecond) {
             MaxValue = SpeedMetersPerSecond;
@@ -50,47 +43,40 @@ public class MaxSpeed {
             MaxValue = SpeedKmPerHour;
             i = 2;
         }
-        String s = "";
+
         switch (i) {
             case 1:
-                s = "Km/h";
+                unit = " Km/h";
                 break;
             case 2:
-                s = "M/h";
+                unit = " M/h";
                 break;
         }
-
-
-        System.out.println("Max Speed = " + MaxValue + s);
+        logger.info("Max Speed = " + MaxValue + unit);
 
     }
 
 
-    public double CompareSpeed(int SpeedKmPerHour, int SpeedMetersPerSecond) {
-
+    public double compareDifferentSpeedsAndOutputBigger(int SpeedKmPerHour, int SpeedMetersPerSecond) {
 
         double SpeedTrsnsform = SpeedKmPerHour * 0.27777777;
-
         double MaxValue = 0;
 
         if (SpeedKmPerHour < 0 || SpeedMetersPerSecond < 0) {
-            System.out.println("Speed can;t be less 0");
-            logger.info("Speed can;t be less 0 from logger");
+            logger.info("Speed can;t be less 0");
         } else if (SpeedTrsnsform < SpeedMetersPerSecond) {
             MaxValue = SpeedMetersPerSecond;
-            System.out.println(MaxValue);
+            logger.info(MaxValue);
         } else {
             MaxValue = SpeedKmPerHour;
-            System.out.println(MaxValue);
-
+            logger.info(MaxValue);
         }
         return MaxValue;
 
     }
-
     public static void main(String[] args) {
-        MaxSpeed maxSpeed = new MaxSpeed();
-        maxSpeed.CompareSpeed(-100, 10);
+        Speed maxSpeed = new Speed();
+        maxSpeed.compareDifferentSpeedsAndOutputBigger();
 
     }
 

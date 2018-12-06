@@ -1,46 +1,39 @@
 package com.company;
 
+import com.sun.istack.internal.logging.Logger;
+
 public class DoubleNumber {
 
-    public void functionDoubleNumber() {
-try {
-    int Number =  ConsoleInputRead.inputAndReadDataFromConsole();
-    if (Number % 7 == 0) {
-        System.out.println(String.valueOf(Math.abs(Number)) + String.valueOf(Math.abs(Number)));
-    }
-    else {
-        System.out.println("Finish");
-    }
-}
+    static Logger logger = Logger.getLogger(DoubleNumber.class);
 
-catch (Exception e)
-{
-    System.out.println("Wrong input"+e);
+    public void getDoubleNumber() {
+        int Number = ConsoleInputRead.inputAndReadDataFromConsole();
 
-}
+        if (Number % 7 == 0) {
+           logger.info(String.valueOf(Math.abs(Number)) + String.valueOf(Math.abs(Number)));
+        } else {
+            logger.info("Finish");
+        }
+
     }
 
+    public String getDoubleNumber(int number) {
 
-    public String functionDoubleNumber(int Number) {
-
-            String result="";
-            if (Number % 7 == 0) {
-               result= String.valueOf(Math.abs(Number)) + String.valueOf(Math.abs(Number));
-            }
-
+        String result = "";
+        if (number % 7 == 0) {
+            result = String.valueOf(Math.abs(number)) + String.valueOf(Math.abs(number));
+        }
         return result;
-
     }
-
 
     public static void main(String[] args) {
-
         DoubleNumber doubleNumber = new DoubleNumber();
-        doubleNumber.functionDoubleNumber();
-
+        doubleNumber.getDoubleNumber();
     }
 
-
-
-
 }
+
+
+
+
+
